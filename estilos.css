@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: ink free, sans-serif;
     text-align: center;
@@ -54,80 +55,45 @@ button:hover {
     background: #650404;
 }
 
-.imagen img {
-    width: 300px; /* Aumenta el tamaño */
-    height: 300px; /* Mantiene proporciones */
-    object-fit: cover; /* Evita distorsión */
+/* 📌 Ajuste GLOBAL para todas las imágenes */
+img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 📌 Ajuste para imágenes dentro de Inicio */
+#inicio img {
+    max-width: 450px; 
     border-radius: 10px;
-    margin: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    transition: transform 0.3s;
-}
-
-.imagen img:hover {
-    transform: scale(1.1);
-}
-
-
-.galeria .imagen img {
-    width: 150px; /* Reduce el tamaño */
-    height: auto; /* Mantiene proporciones */
-    display: block;
-    margin: 10px auto; /* Centra las imágenes */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    transition: transform 0.3s;
-}
-
-.galeria .imagen img:hover {
-    transform: scale(1.1);
-}
-#mensaje img {
-    width: 900px; /* Tamaño más pequeño */
-    height: auto; /* Mantiene proporción */
-    display: block;
-    margin: 10px auto; /* Centra la imagen */
-    border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
-/* Ajustes para pantallas menores a 768px (tabletas y celulares) */
+/* 📌 Ajuste para imágenes dentro de Discurso */
+#discurso img {
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* 🎯 Media Queries para dispositivos pequeños */
 @media screen and (max-width: 768px) {
-    body {
-        font-size: 16px; /* Tamaño de letra adaptable */
-    }
-
     nav ul li {
-        display: block; /* Menú en columnas para mejor usabilidad */
+        display: block;
         margin: 5px 0;
     }
 
-    .imagen img {
-        width: 100%; /* Imágenes más flexibles */
-        height: auto;
-    }
-
-    #mensaje img {
-        width: 100%; /* La imagen de mensaje se ajusta */
-        max-width: 400px; /* Límite de tamaño */
-    }
-
-    .galeria .imagen img {
-        width: 90%; /* Galería más adaptable */
-        max-width: 200px;
-    }
-
-    button {
-        width: 100%; /* Botón ajustado al ancho de pantalla */
-        padding: 12px;
+    #inicio img, #discurso img {
+        max-width: 90vw; /* Se adapta al ancho de la pantalla */
     }
 }
 
-/* Ajustes para pantallas menores a 480px (celulares pequeños) */
 @media screen and (max-width: 480px) {
     header {
         padding: 10px;
-        text-align: center; /* Centrar el título */
+        text-align: center;
     }
 
     nav ul {
@@ -135,50 +101,11 @@ button:hover {
         text-align: center;
     }
 
-    .imagen img {
-        max-width: 250px; /* Ajuste de tamaño para celulares */
-    }
-
-    .galeria .imagen img {
-        width: 80%; /* Hacer imágenes más accesibles */
+    #inicio img, #discurso img {
+        max-width: 80vw; /* Ajuste más reducido en celulares */
     }
 
     button {
-        font-size: 14px; /* Texto del botón más pequeño */
-    }
-}
-
-
-/* MODIFICADO RECIENTE */
-#inicio img {
-    width: 100%; /* Que se ajuste al ancho del contenedor */
-    max-width: 500px; /* Límite para que no sea demasiado grande */
-    height: auto; /* Mantener proporciones */
-    display: block;
-    margin: 10px auto; /* Centrar la imagen */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-}
-
-/* Ajustes específicos para pantallas pequeñas */
-@media screen and (max-width: 480px) {
-    #inicio img {
-        max-width: 300px; /* Reduce tamaño en celulares */
-    }
-}
-#discurso img {
-    width: 100%; /* Que se adapte al ancho */
-    max-width: 450px; /* Límite de tamaño */
-    height: auto; /* Evita que se deforme */
-    display: block;
-    margin: 10px auto; /* Centrar */
-    border-radius: 10px; /* Bordes suaves */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-}
-
-/* Ajuste adicional para celulares */
-@media screen and (max-width: 480px) {
-    #discurso img {
-        max-width: 280px; /* Tamaño más pequeño para pantallas reducidas */
+        font-size: 14px;
     }
 }
