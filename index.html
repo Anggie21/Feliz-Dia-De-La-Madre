@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Día de la Madre</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>🌸 Feliz Día de la Madre 💖</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="cambiarSeccion('inicio')">Inicio</a></li>
+                <li><a href="#" onclick="cambiarSeccion('mensaje')">Mensaje Especial</a></li>
+                <li><a href="#" onclick="cambiarSeccion('galeria')">Galería</a></li>
+                <li><a href="#" onclick="cambiarSeccion('discurso')">Discurso</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="seccion activa">
+            <h2>Bienvenida</h2>
+            <p>Una madre es alguien que puede hacer el trabajo de todos, pero cuyo trabajo nadie puede hacer.</p>
+            <img src="3.jpg" alt="Feliz Día de la Madre">
+        </section>
+
+        <section id="mensaje" class="seccion">
+            <h2>Mensaje Especial</h2>
+            <p id="mensajeTexto">Haz clic para descubrir tu mensaje.</p>
+            <button onclick="mostrarMensaje()">Ver Mensaje</button>
+            <img src="https://imagenes.planb.mx/uploads/2023/02/memkdmekmde.jpg" alt="Mensaje de amor">
+        </section>
+
+        <section id="galeria" class="seccion">
+            <h2>Galería de Recuerdos</h2>
+            <div class="imagen">
+                <img src="2.jpg" alt="Foto con mamá">
+            
+                <img src="1.jpg" alt="Recuerdo especial">
+            
+                <img src="4.jpg" alt="Un momento feliz">
+            </div>
+        </section>
+
+        <section id="discurso" class="seccion">
+            <h2>Discurso para Mamá</h2>
+            <p>
+                Mamá, hoy celebramos tu amor, tu sacrificio y tu dedicación. 
+                Eres la luz que guía nuestros días y el abrazo que siempre nos reconforta. 
+                Gracias por cada sonrisa, cada palabra de aliento y cada enseñanza. 
+                Hoy y siempre, queremos recordarte lo especial que eres. 
+                ¡Feliz Día de la Madre! 💕
+            </p>
+            <img src="https://i0.wp.com/espacioteca.com/wp-content/uploads/2023/05/feliz-dia-de-la-madre25.jpg" alt="Discurso emotivo">
+        </section>
+    </main>
+
+    <script src="java.js"></script>
+</body>
+</html>
